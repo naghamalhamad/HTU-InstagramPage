@@ -1,4 +1,4 @@
-*{
+ *{
     margin: 0;
     padding: 0;
     font-family:'Open Sans', Arial, sans-serif;
@@ -84,6 +84,7 @@ h1{
    justify-content: center;
    align-content: center;
    gap: 20px;
+   
 }
 img{
     max-width: 100%;
@@ -122,8 +123,6 @@ img{
     -ms-transform: translate(-50%, -50%);
     text-align: center;
     visibility: hidden;
-  
-
 
 }
 
@@ -164,7 +163,7 @@ html, body {
  
     display: grid;
     grid-template-columns:repeat(2,1fr);
-    margin: 0 10% 5% 15%;
+    margin-left: 6%;
     justify-content: center;
     align-content: center;
     gap: 20px;
@@ -199,7 +198,7 @@ html, body {
 #settings{
      position: relative;
      top:0.3em; 
-      padding-left: 10px;
+     padding-left: 10px;
     }
     
  .line{
@@ -234,12 +233,32 @@ display: flex;
     padding-left: 2rem;
     padding-right:2rem;
 
-
-    
 }
 
 .bioresponsive{
 margin: -5% 5% 2% 7%;
+}
+#album,#video{
+    color:#ffffff;
+    position: absolute;
+    top:2%;
+    left:84%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: scale(0.7);
+ 
+  }
+  .icons{
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: scale(0.7);
+    text-align: center;
+    visibility: hidden;
+
 }
 
 }
@@ -247,49 +266,71 @@ margin: -5% 5% 2% 7%;
  @media (max-width:220px){
     html,body{
         max-width: 100%;
-        overflow-x: hidden;
         font-size: 0.7rem;
     }
     .main{
  
         display: grid;
-        grid-template-columns:1fr auto; 
+        grid-template-columns:1fr ; 
         justify-content: center;
         align-content: center;
         gap: 20px;
-        max-width: 100%;
+        margin-left: 5%;
+        
+    
         
      }
      img{
         max-width: 100%;
         max-height: 100%;
-     
-    
     }
   .section1{
-  display: grid;
-
+   display: grid;
    font-size: 0.7em;
    size: 30px;
   }
   .settings{
     background-size: 100% 100%;
 
+
   }
     .btnresponsive{
    font-size: 0.5rem;
    padding:0 3em 0 3em;
    width: 100%;
-  font-size:1.7em ;
+   font-size:1.7em ;
    
     }
 
+    #album,#video{
+        color:#ffffff;
+        position: absolute;
+        top:2%;
+        left:84%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: scale(0.7);
+     
+      }
+      .icons{
+        color: white;
+        position: absolute;
+        top: 40%;
+        left: 33%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: scale(0.7);
+        text-align: center;
+        visibility: hidden;
+    
+    }
  }
 
   
 
  
  
+
 
  
  
